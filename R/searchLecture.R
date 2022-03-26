@@ -10,7 +10,8 @@
 #' @export
 searchLecture <- function(keywords) {
   search_results <- pdfsearch::keyword_directory('./slides', keywords)
-  print(1)
+  print(getwd())
+  print(search_results)
   results <- search_results[, 2:4]
   print(results)
   return(results)
