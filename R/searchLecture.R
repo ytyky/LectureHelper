@@ -9,10 +9,10 @@
 #' @return A matrix of the related pages
 #' @export
 searchLecture <- function(keywords) {
-  search_results <- pdfsearch::keyword_directory('./slides', keywords)
-  print(getwd())
-  print(search_results)
+  packagePath <- system.file(package = "LectureHelper")
+  folder <- paste(packagePath, "/slides", sep="")
+  search_results <- pdfsearch::keyword_directory(folder, keywords)
   results <- search_results[, 2:4]
-  print(results)
+
   return(results)
 }
