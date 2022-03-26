@@ -10,6 +10,7 @@
 #' @export
 searchLecture <- function(keywords) {
   packagePath <- system.file(package = "LectureHelper")
+  print(packagePath)
   folder <- paste(packagePath, "/slides", sep="")
   search_results <- pdfsearch::keyword_directory(folder, keywords)
   results <- search_results[, 2:4]
