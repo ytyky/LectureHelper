@@ -1,0 +1,13 @@
+Package: LectureHelper
+Title: A quick way to look up lecture notes
+Version: 0.0.0.9000
+Authors@R: 
+    person("Tianyu", "Yao", , "ty2457@columbia.edu", role = c("aut", "cre"))
+Description: This package provide a search engine for "STAT5293: Statistical Graphics"
+Imports:
+  pdfsearch
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
