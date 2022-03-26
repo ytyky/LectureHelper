@@ -9,6 +9,7 @@
 #' @return A matrix of the related pages
 #' @export
 searchLecture <- function(keywords) {
-  results <- pdfsearch::keyword_directory('./slides', keywords)
-  results <- results[, 2:4]
+  search_results <- pdfsearch::keyword_directory('./slides', keywords)
+  results <- search_results[, 2:4]
+  return(results)
 }
