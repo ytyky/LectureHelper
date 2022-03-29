@@ -10,6 +10,9 @@ The package provide a function that can search through the library and located s
 ## Challenge
 This package heavily rely on another R package, pdfsearch. The search function can correctly identify what pdf documents contain the texts, but perform badly on retrieving the page information.
 
+## Example
+![example image](image/example.png)
+
 ## Download
 Run code below to download
 
