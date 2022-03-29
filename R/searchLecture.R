@@ -11,7 +11,11 @@
 searchLecture <- function(keywords) {
   directory <- system.file("slides", package = "LectureHelper")
   search_results <- pdfsearch::keyword_directory(directory, keywords)
-  results <- search_results[, 2:4]
-
-  return(results)
+  if (nrow(search_results) == 0) {
+    print("nothing found!")
+  }
+  else {
+    results <- search_results[, 2:4]
+    return(results)
+  }
 }
