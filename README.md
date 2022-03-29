@@ -1,5 +1,5 @@
 # LectureHelper
-This r package can download and install in order to help student in STAT 5293:  Statistical Graphics to search, browse and located related materials quickly and efficiently.
+This r package can download and install in order to help student in STAT 5293:  Statistical Graphics to search, browse and locate related materials quickly and efficiently.
 
 ## Motivation
 The initial motivation of build such a package is to encapsulate lecture notes and build a library inside R for reference. In this way, students can quickly check the potential slides that contains function or notions they need to finish tasks.
@@ -9,6 +9,9 @@ The package provide a function that can search through the library and located s
 
 ## Challenge
 This package heavily rely on another R package, pdfsearch. The search function can correctly identify what pdf documents contain the texts, but perform badly on retrieving the page information.
+
+## Example
+![example image](image/example.png)
 
 ## Download
 Run code below to download
